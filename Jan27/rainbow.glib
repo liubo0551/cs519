@@ -1,0 +1,16 @@
+##OpenGL GLIB
+LookAt 0 0 5  0 0 0  0 1 0
+Perspective 70
+
+Vertex   rainbow.vert
+Fragment rainbow.frag
+Program  Rainbow				\
+		uUseST <false>			\
+		uA <0. .6 5.>			\
+		uTol <0. 0. .0625>		\
+		uNoiseMag <0. 0. 10.>		\
+		uNoiseFreq <0. .15 2.>
+
+Teapot
+#Obj dog.obj
+

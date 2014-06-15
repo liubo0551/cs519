@@ -1,0 +1,20 @@
+##OpenGL GLIB
+
+Perspective 70
+LookAt 0 0 3  0 0 0  0 1 0
+
+
+Vertex pyramids.vert
+Fragment pyramids.frag
+Program BumpMapTest					\
+	Ang <-3.14159 0.785398 3.14159>		\
+	BumpDensity <5. 16. 100.>			\
+	BumpHeight <-.06 .005 .06>			\
+	SurfaceColor {0.7 0.8 0.1 1.}		\
+	LightX <-10.  0. 10.0>			\
+	LightY <-10. 10. 10.0>			\
+	LightZ <-10. 10. 10.0>			\
+	Ambient <0. 0.1 .4>
+
+#Sphere 1 20 20
+Torus .5 1 40 40

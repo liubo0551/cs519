@@ -1,0 +1,10 @@
+##OpenGL GLIB
+Perspective 90
+
+
+Vertex   showst.vert
+Fragment showst.frag
+Program  ShowST	
+
+#Sphere
+Teapot

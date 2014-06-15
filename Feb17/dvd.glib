@@ -1,0 +1,15 @@
+##OpenGL GLIB
+
+Perspective 70.
+LookAt 0 0 3  0 0 0  0 1 0
+
+Vertex   dvd.vert
+Fragment dvd.frag
+Program DVD						\
+			D <740. 1600. 1600.>		\
+			LightX <-20. -20. 20.>	\
+			LightY <0.0. 20.>		\
+			LightZ <-20. -15. 0.>
+
+
+DiskXY  -.2  2.  60  60

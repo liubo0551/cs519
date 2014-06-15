@@ -1,0 +1,22 @@
+##OpenGL GLIB
+
+Perspective 70
+LookAt 0 0 1  0 0 0  0 1 0
+
+
+# Do all heights and distances in nanometers (nm)
+
+Vertex   oilslick.vert
+Fragment oilslick.frag
+Program OilSlick  				\
+		MaxHeight <0. 110. 110.>	\
+		Tol <0. 25. 200.>		\
+		NoiseMag <0. 0.5 2.>		\
+		A <0. 2. 5.>			\
+		B <0. 0. .6>			\
+		Scale <0. 2. 5.>		\
+		SkyColor {.1 .1 1. 1.}	\
+		CloudColor {0.8 0.8 0.8 1.}
+
+
+QuadXY  -.2  2.

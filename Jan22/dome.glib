@@ -1,0 +1,15 @@
+##OpenGL GLIB
+
+Ortho -1. 1. -1. 1.
+
+
+Vertex dome.vert
+Fragment dome.frag
+Program Dome
+
+Color [1. .5 0.]
+PushMatrix
+	Translate 0. 0. -.2
+	Rotate -90  1 0 0
+	WireTeapot
+PopMatrix

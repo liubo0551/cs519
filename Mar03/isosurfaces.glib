@@ -1,0 +1,31 @@
+##OpenGL GLIB
+Perspective 70
+LookAt 0 0 3  0 0 0  0 1 0
+
+
+Texture3D 5 vis3dtexture.tex
+Linear
+Clamp
+
+Vertex   isosurfaces.vert
+Fragment isosurfaces.frag
+Program  IsoSurfaces					\
+	TexUnit 5						\
+	Perspective <true>				\
+	LightX <-10. 0. 10.>				\
+	LightY <-10. 10. 10.>				\
+	LightZ <-10. 10. 10.>				\
+	Steps <1 300 1000>				\
+	Sstar <0. 30. 255.>				\
+	RainbowScale <true>				\
+	Lighting <true>					\
+	Shininess <3. 100. 1000.>
+
+
+#QuadXY  1. 1. 1 1
+#QuadYZ  1. 1. 1 1
+#QuadXZ  1. 1. 1 1
+#QuadXY -1. 1. 1 1
+#QuadYZ -1. 1. 1 1
+#QuadXZ -1. 1. 1 1
+Sphere 1.8 100 100

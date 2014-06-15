@@ -1,0 +1,36 @@
+##RenderMan RIB
+version 3.03
+
+# declare the variables:
+
+Declare "Prob"  "uniform float"
+Declare "Width" "uniform float"
+
+# define the output file:
+
+Display "first.tiff" "file" "rgb" 
+Format 500 500 -1
+
+# define the lighting:
+
+LightSource "ambientlight" 1 "intensity" [0.25]
+LightSource "distantlight" 2 "intensity" [0.75] "from" [5 8 -10] "to" [0 0 0]
+
+# define the rendering parameters:
+
+ShadingRate 1
+Projection "perspective" "fov" [70]
+
+# define the scene to be rendered:
+
+WorldBegin
+	Surface "first"  "Prob" 0.2  "Width" 0.05
+						# specify the surface shader
+	Color   [1 1 1]				# specify the Cs color
+	Opacity [1 1 1]				# specify the Os opacity
+	TransformBegin
+		Translate 0 0 6			# move away from the eye (= gluLookAt)
+		Rotate 90  1. 0. 0.		# rotate so don't see north pole
+		Sphere 3 -3 3 360 		# a full sphere
+	TransformEnd
+WorldEnd

@@ -1,0 +1,52 @@
+##RenderMan RIB
+version 3.03
+Display "demoimage.tiff" "file" "rgb" 
+Format 500 500 -1
+ShadingRate 1.
+LightSource "ambientlight" 1 "intensity" [0.25]
+LightSource "distantlight" 2 "intensity" [0.75]"from" [0 0 -10]"to" [0 0 0]
+Projection "perspective" "fov" [70]
+
+WorldBegin
+
+Translate 0 0 5		# move the scene away from the eye
+
+Surface "plastic" "Ka" .15 "Kd" .70 "Ks" .15 "roughness" .1 "specularcolor" [1 1 1]
+
+
+Opacity [1 1 1]		# make everything opaque for now
+
+# sphere:
+
+Color [1 0 0]
+Translate -2 0 0
+Sphere 1 -1 1 360 
+
+# cone:
+
+Color [1 1 0]
+Translate 1.5 0 0
+TransformBegin
+	Rotate -90 1 0 0
+	Cone 1. 0.5 360.
+TransformEnd
+
+# cylinder:
+
+Color [0 1 0]
+Translate 1.5 0 0
+TransformBegin
+	Rotate -90 1 0 0
+	Cylinder .5 -.5 .5 360.
+TransformEnd
+
+# paraboloid:
+
+Color [0 1 1]
+Translate 1.5 0 0
+TransformBegin
+	Rotate -90 1 0 0
+	Paraboloid .5 0 .9 360.
+TransformEnd
+
+WorldEnd 

@@ -1,0 +1,60 @@
+###OpenGL GLIB
+Perspective 70
+
+# setup the 2 textures:
+
+Texture2D 5 paint0.bmp
+Texture2D 6 512 512
+
+# execute first iteration:
+
+RenderToTexture 6
+
+Background 0. 0. 0.
+Clear
+Vertex   life.vert
+Fragment life.frag
+Program GameOfLife1   InUnit 5
+TextureMatrix
+Translate 0. 0. -3.08
+QuadXY .2 2.
+
+# render it so we can see it:
+
+RenderToTexture
+
+Background 0. .2 0.
+Clear
+Vertex   texture.vert
+Fragment texture.frag
+Program Texture1		InUnit 6
+ModelViewMatrix
+Translate 0. 0. -3.08
+QuadXY .2 2.
+SwapBuffers
+
+# execute the second iteration:
+
+RenderToTexture 5
+Background 0. 0. 0.
+Clear
+Vertex   life.vert
+Fragment life.frag
+Program GameOfLife2   InUnit 6
+QuadXY .2 2.
+
+# render it so we can see it:
+
+RenderToTexture
+Background .2 0. 0.
+Clear
+Vertex   texture.vert
+Fragment texture.frag
+Program Texture2		InUnit 5
+PushMatrix
+QuadXY .2 2.
+PopMatrix
+
+# repeat:
+
+animate

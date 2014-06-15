@@ -1,0 +1,3 @@
+
+0(76) : error C1008: undefined variable "Rainbow"
+

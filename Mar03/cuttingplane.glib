@@ -1,0 +1,18 @@
+##OpenGL GLIB
+Perspective 70
+LookAt 0 0 3  0 0 0  0 1 0
+
+PointSizeMode 1
+
+Texture3D 5 vis3dtexture.tex
+
+Vertex   cuttingplane.vert
+Fragment cuttingplane.frag
+Program  CuttingPlane					\
+	TexUnit 5						\
+	Z <-1. 0. 1.>					\
+	Min <0. 0. 100>  Max < 0. 120. 120.>
+
+Linear
+Clamp
+QuadXY 0. 1. 1 1

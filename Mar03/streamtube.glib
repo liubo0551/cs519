@@ -1,0 +1,15 @@
+##OpenGL GLIB
+Perspective 70
+LookAt 0 -8 3  0 0 3  0 0 1
+
+Vertex   streamtube.vert
+Fragment streamtube.frag
+Program  StreamTube							\
+	Scale <0.01 .7 2.>						\
+	K <0. 6. 25.>  N <0. 2. 10.>				\
+	Peristaltic <0. 0. 2.>  Speed <1. 1. 5.>
+
+Color 1. 0. 0.
+#Xarrow 200
+Sphere 1. 500 500
+#Teapot

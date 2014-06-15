@@ -1,0 +1,33 @@
+##OpenGl GLIB
+perspective 90
+Texture2D 6 256 256
+RenderToTexture 6
+
+
+Background 0.59  0.78  0.93 
+clear
+
+Vertex waterunit.vert
+Fragment waterunit.frag
+Program Waterunit	\
+		uNoiseAmp <0. 0.3 1.>
+
+glBegin GL_QUADS
+    glVertex -1. -1. -1. 
+    glVertex 1. -1. -1.
+    glVertex 1. 1. -1.
+    glVertex -1. 1. -1.
+glEnd
+	
+
+RenderToTexture
+
+Background 0.39  0.78  0.93 
+clear
+
+Vertex water.vert
+Fragment water.frag
+Program Water	\
+		ImageUnit 6	
+
+QuadXY -1. 150. 300 300

@@ -1,0 +1,19 @@
+##OpenGL GLIB
+Perspective 70
+
+PointSizeMode 1
+
+Texture3D 5 vis3dtexture.tex
+
+Vertex probe.vert
+Fragment probe.frag
+Program Probe						\
+	TexUnit 5						\
+	Min <0. 0. 100>  Max < 0. 150. 150.>
+
+Linear
+Clamp
+Sphere
+#Rotate -90.  1. 0. 0.
+#Scale 0.5
+#Teapot

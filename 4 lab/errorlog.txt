@@ -1,0 +1,3 @@
+
+0(18) : error C0000: syntax error, unexpected reserved word "const", expecting ',' or ';' at token "const"
+

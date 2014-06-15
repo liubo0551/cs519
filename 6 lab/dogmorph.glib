@@ -1,0 +1,17 @@
+##OpenGL GLIB
+LookAt 0 0 6  0 0 0  0 1 0
+Perspective 90
+
+Vertex dogmorph.vert
+Fragment dogmorph.frag
+Program DogMorph \
+		uForce <0. 0. 100.> \
+		uForce1 <0. 0. 100.> \
+		uX	<-5. 0. 5.>	\
+		uY	<-5. 0. 5.>	\
+		uZ	<-5. 0. 5.>	
+
+Color 1. .8 0.
+Translate 2. 2. 2.
+Obj dog2.obj
+

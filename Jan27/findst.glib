@@ -1,0 +1,13 @@
+##OpenGL GLIB
+Perspective 70
+
+Vertex findst.vert
+Fragment findst.frag
+Program FindST  		uS <0. 0. 1.>				\
+					uT <0. 0. 1.>				\
+					uTol <0. .05 .5>
+
+Color 1. 1. 1.
+Sphere 1. 60 60
+#Obj dog.obj
+ 

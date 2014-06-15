@@ -1,0 +1,17 @@
+##OpenGL GLIB
+Ortho -2. 2.  -2. 2.
+LookAt 0 0 4  0 0 0  0 1 0
+
+PointSizeMode 1
+
+Texture3D 5 vis3dtexture.tex
+
+Vertex   pointcloud.vert
+Fragment pointcloud.frag
+Program  PointCloud					\
+	TexUnit 5						\
+	PointSize <1. 2. 5.>				\
+	Min <0. 0. 100>  Max <0. 120. 120.>
+
+PointCloud 50 50 50
+#JitterCloud 50 50 50

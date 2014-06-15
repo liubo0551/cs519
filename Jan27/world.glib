@@ -1,0 +1,14 @@
+##OpenGL GLIB
+Perspective 70
+
+Texture2D 6 worldtex.bmp # 6 is texture units No.
+
+Vertex world.vert
+Fragment world.frag
+Program World  	Blend <0. 0. 1.>					\
+			Frequency <1. 1. 20.>					\
+			OffsetS <0. 0. 1.>  OffsetT <0. 1. 1.>	\
+			TexUnit 6
+
+Color [1. .3 0.]
+Sphere 1. 60 60 

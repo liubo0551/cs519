@@ -1,0 +1,17 @@
+##OpenGL GLIB
+
+Ortho -1. 1. -1. 1.
+
+
+Vertex corvallis.vert
+Fragment corvallis.frag
+Program Corvallis 	Xcntr 1274035.  Ycntr  341253.   Scale 50000.	\
+				Polar <true>   	   K <0.01 1. 1.>			\
+				TransX <-.3 0. .3>   TransY <-.3 0. .3>
+
+Color [1. .5 0.]
+Shp centerline.shp
+Color [1. 1. 0.]
+Shp building.shp
+Color [0. 1. 0. 0.5]
+Shp parks.shp

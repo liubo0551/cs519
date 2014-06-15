@@ -1,0 +1,20 @@
+##OpenGL GLIB
+
+Perspective 70
+LookAt 0 0 8  0 0 0  0 1 0
+
+
+Vertex ripples.vert
+Fragment ripples.frag
+Program Ripples					\
+	LightX <-10.  0. 10.0>		\
+	LightY <-10. 10. 10.0>		\
+	LightZ <-10. 10. 10.0>		\
+	Color {0.7 0.8 0.1 1.}		\
+	Time <0. 0. 10.>			\
+	Pd <.2 1. 1.5>				\
+	Amp0 <0. .05 .05>			\
+	Amp1 <0. 0. .05>			\
+	PhaseShift <0. 0. 6.28>
+
+QuadXY  -.1  5.

@@ -1,0 +1,20 @@
+##OpenGL GLIB
+
+Perspective 70
+LookAt 0 0 3  0 0 0  0 1 0
+
+
+Vertex   bumpnotan.vert
+Fragment bumpnotan.frag
+Program  BumpNoTanget				\
+	LightX <-10.  0. 10.0>		\
+	LightY <-10.  0. 10.0>		\
+	LightZ <-10. 10. 10.0>		\
+	SurfaceColor {0.7 0.8 0.1 1}	\
+	BumpDensity <2. 5. 20.>		\
+	BumpSize <0.2 0.5 1.>			\
+	BumpHeight <-1. 1. 1.>		\
+	Ambient <0. 0.1 .4>
+
+Rotate -90  1 0 0
+Teapot

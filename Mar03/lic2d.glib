@@ -1,0 +1,13 @@
+##OpenGL GLIB
+Ortho -1.5 1.5  -1.5 1.5
+LookAt 0 0 1  0 0 0  0 1 0
+
+Texture2D 6 whitenoisetexture2d.tex
+Texture2D 7 flow2d.tex
+
+Vertex   lic2d.vert
+Fragment lic2d.frag
+Program  Lic2D  uImageUnit 6  uFlowUnit 7		\
+			uCircle <true>				\
+			uLength <0 10 100>
+QuadXY
